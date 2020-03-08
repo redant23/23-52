@@ -18,8 +18,14 @@ const Header = (props) => {
 			<S.Menu show={menuOn}>
 				<ul>
 					<li>
-						<h3>힌트 요청</h3>
-						<a href="http://pf.kakao.com/_Frkxjxb/chat" target="_blank" ><img src={kakao} /></a>
+						<h3>문의하기</h3>
+						<img src={kakao} />
+						<S.Text>
+							카카오톡 친구추가 -
+						</S.Text>
+						<S.Text>
+							23시52분
+						</S.Text>
 					</li>
 				</ul>
 			</S.Menu>

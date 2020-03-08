@@ -26,7 +26,9 @@ const Menu = styled.div`
 		color: #fff;
 		font-weight: 700;
 		img {
-			width: 100%;
+			margin-top: 10px;
+			margin-bottom: 8px;
+			width: 90%;
 		}
 	}
 
