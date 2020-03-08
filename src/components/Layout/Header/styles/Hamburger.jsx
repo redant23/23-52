@@ -6,7 +6,7 @@ const Hamburger = styled.div`
 	align-items:     center;
 	justify-content: center;
 
-	z-index: 10;
+	z-index: 11;
 	padding: 10px;
 	height: 41px;
 	/*margin-right: 10px;*/

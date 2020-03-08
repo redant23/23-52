@@ -9,6 +9,7 @@ const Menu = styled.div`
 	width: 50%;
 	height: 100%;
 
+	z-index: 10;
 	position: fixed;
 	top: 0;
 	right: 0;

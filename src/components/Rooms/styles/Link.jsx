@@ -3,8 +3,12 @@ import { Link } from 'react-router-dom';
 
 const SLink = styled(Link)`
 
-  display: inline-flex;
+  display:        flex;
   flex-direction: column;
+  align-items:    center;
+
+  margin-bottom: 20px;
+  width: 100%;
 
 `;
 

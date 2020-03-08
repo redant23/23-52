@@ -5,6 +5,7 @@ const Room = styled.div`
   display: flex;
   flex-direction: column;
 
+  position: relative;
   width:     100%;
   max-width: 300px;
   height: 320px;
@@ -14,6 +15,7 @@ const Room = styled.div`
   color: #C2C2C2;
   font-weight: 700;
   padding: 10px;
+  box-sizing: border-box;
   font-size: 12px;
 
 `;

@@ -1,22 +1,38 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Formik }          from 'formik';
 import { Link }            from 'react-router-dom';
 import S                   from './styles';
+import Success             from './Success';
+import Failed              from './Failed';
 import Stopwatch           from '../../lib/Stopwatch';
 
 const Room = ({ data }) => {
 
   const [currentStep, setCurrentStep] = useState(0);
+  const [onSuccess, setOnSuccess]     = useState(false);
+  const [onFailed, setOnFailed]       = useState(false);
+  const [leftTime, setLeftTime]       = useState(null);
+
   const steps = data.steps;
   const step = steps[currentStep];
 
   const next = () => {
-    setCurrentStep(currentStep + 1);
+    const questionTotal = steps.filter(step => step.input.length).length - 1;
+
+    if (questionTotal === currentStep) {
+      setOnSuccess(true);
+    } else {
+      setCurrentStep(currentStep + 1);
+    }
+  };
+
+  const timeOver = () => {
+    setOnFailed(true);
   };
 
   const confirmAnswer = (answer, resetForm) => {
 
-    if (answer === step.answer) {
+    if (answer.toUpperCase() === step.answer) {
       next();
       resetForm();
     } else {
@@ -25,12 +41,40 @@ const Room = ({ data }) => {
     }
   }
 
-  if (!data) return null;
+  useEffect(() => {
 
+    if (leftTime && !leftTime.minutes && !leftTime.seconds) {
+      timeOver();
+    }
+
+  }, [leftTime]);
+
+  if (!data) return null;
 
   return (
     <S.Wrapper coverUrl={step.image}>
-      <S.Count><Stopwatch time={data.limit * 60}/></S.Count>
+      {
+        onSuccess &&
+        <Success
+          data         = {data.successView}
+          completeTime = {leftTime}
+        />
+      }
+      {
+        onFailed &&
+        <Failed
+          data={data.failView}
+        />
+      }
+      <S.Count>
+        {
+          (!onSuccess && !onFailed) &&
+          <Stopwatch
+            currentTime = {(time) => setLeftTime(time)}
+            time        = {data.limit * 60}
+          />
+        }
+      </S.Count>
       <S.Item>
         <S.Question>
           <img src={step.question}/>
@@ -63,7 +107,7 @@ const Room = ({ data }) => {
                         />
                       ))}
                       {props.errors.name && <div id="feedback">{props.errors.name}</div>}
-                      <button type="submit">Submit</button>
+                      <button type="submit">입력</button>
                     </S.Form>
                   )
                 }

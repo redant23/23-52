@@ -19,7 +19,7 @@ const Header = (props) => {
 				<ul>
 					<li>
 						<h3>힌트 요청</h3>
-						<a href="http://pf.kakao.com/_Frkxjxb/chat" type="_blank" ><img src={kakao} /></a>
+						<a href="http://pf.kakao.com/_Frkxjxb/chat" target="_blank" ><img src={kakao} /></a>
 					</li>
 				</ul>
 			</S.Menu>
