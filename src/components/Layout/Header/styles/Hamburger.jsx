@@ -8,6 +8,7 @@ const Hamburger = styled.div`
 
 	z-index: 10;
 	padding: 10px;
+	height: 41px;
 	/*margin-right: 10px;*/
 
 `;

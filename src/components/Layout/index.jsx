@@ -18,9 +18,7 @@ const Layout = ({noneHeader, ...props}) => {
 	return (
 		<Wrapper>
 
-			{
-				!noneHeader && <Header />
-			}
+			<Header noneHeader={noneHeader}/>
 
 			<Main {...props}/>
 

@@ -10,7 +10,7 @@ const Header = (props) => {
 	const [menuOn, toggleMenu] = useState(false);
 
 	return (
-		<S.HeaderWrapper>
+		<S.HeaderWrapper noneHeader={props.noneHeader}>
 			<S.Hamburger onClick={() => toggleMenu(!menuOn)}>
 				<img style={{ display: `${menuOn ? 'none' : 'block'}` }} src={hamburger} />
 				<img style={{ display: `${menuOn ? 'block' : 'none'}` }} src={close} />
@@ -19,7 +19,7 @@ const Header = (props) => {
 				<ul>
 					<li>
 						<h3>힌트 요청</h3>
-						<a href="http://pf.kakao.com/_Frkxjxb/chat" ><img src={kakao} /></a>
+						<a href="http://pf.kakao.com/_Frkxjxb/chat" type="_blank" ><img src={kakao} /></a>
 					</li>
 				</ul>
 			</S.Menu>

@@ -10,6 +10,13 @@ const HeaderWrapper = styled.nav`
 	padding:    10px 5px;
 	box-sizing: border-box;
 
+	${({ noneHeader }) => noneHeader && `
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 10;
+	`}
+
 `;
 
 export default HeaderWrapper;

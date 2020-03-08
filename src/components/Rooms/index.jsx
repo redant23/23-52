@@ -16,13 +16,13 @@ const Rooms = ({ datas }) => {
       {
         datas.map(({ _id, thumbnail, limit, joined, escape }) => (
           <S.Room key={_id} url={thumbnail}>
-              <S.TextBox>
-                <S.Link to={`room/${_id}`}>
-                  <S.TimeLimit>{limit}</S.TimeLimit>
-                  <S.Line />
-                  <S.EscapeRatio>탈출비율 {getEscapeRatio({ escape, joined })}%</S.EscapeRatio>
-                </S.Link>
-              </S.TextBox>
+            <S.Link to={`room/${_id}`}>
+                <S.TextBox>
+                    <S.TimeLimit>{limit}</S.TimeLimit>
+                    <S.Line />
+                    <S.EscapeRatio>탈출비율 {getEscapeRatio({ escape, joined })}%</S.EscapeRatio>
+                </S.TextBox>
+            </S.Link>
           </S.Room>
         ))
       }
