@@ -1,3 +1,5 @@
-import HeaderWrapper   from './HeaderWrapper';
+import HeaderWrapper from './HeaderWrapper';
+import Hamburger     from './Hamburger';
+import Menu          from './Menu';
 
-export default { HeaderWrapper };
+export default { Hamburger, HeaderWrapper, Menu };

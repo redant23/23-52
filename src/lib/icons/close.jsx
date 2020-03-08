@@ -1,0 +1,1 @@
+export default 'https://firebasestorage.googleapis.com/v0/b/onceaweek2020.appspot.com/o/icons%2Fhamberger_icon_close.svg?alt=media&token=1c8f581e-0c86-4506-be35-9bd9accd6797';
