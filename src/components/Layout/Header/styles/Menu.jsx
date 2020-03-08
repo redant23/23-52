@@ -25,11 +25,6 @@ const Menu = styled.div`
 		box-sizing: border-box;
 		color: #fff;
 		font-weight: 700;
-		img {
-			margin-top: 10px;
-			margin-bottom: 8px;
-			width: 90%;
-		}
 	}
 
 	h3 {
