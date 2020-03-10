@@ -12,7 +12,9 @@ const Failed = ({ data }) => {
 					<S.Button
 						key={i}
 					>
-						<a href={button.url} target="_blank"><img src={button.image} /></a>
+						<a href={button.url} target="_blank">
+							<img src={button.image} />
+						</a>
 					</S.Button>
 				))
 			}

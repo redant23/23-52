@@ -7,14 +7,14 @@ const Wrapper = styled.div`
 
 	display:        flex;
 	flex-direction: column;
-	position: absolute;
+	position:       absolute;
 	width:          100%;
 	height:         100%;
 
 `;
 
 const Layout = ({noneHeader, ...props}) => {
-	console.log('props', props);
+
 	return (
 		<Wrapper>
 
@@ -24,6 +24,7 @@ const Layout = ({noneHeader, ...props}) => {
 
 		</Wrapper>
 	);
+
 };
 
 export default Layout;

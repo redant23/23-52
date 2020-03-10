@@ -1,1 +1,1 @@
-export default 'https://firebasestorage.googleapis.com/v0/b/onceaweek2020.appspot.com/o/icons%2Fkakao.png?alt=media&token=e499361e-16d1-40b3-9092-6fff5787433e';
+export default 'https://github.com/redant23/23-52storage/blob/master/icons/kakao.png?raw=true';

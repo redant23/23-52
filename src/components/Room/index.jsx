@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Formik }          from 'formik';
-import { Link }            from 'react-router-dom';
-import S                   from './styles';
-import Success             from './Success';
-import Failed              from './Failed';
-import Stopwatch           from '../../lib/Stopwatch';
+import { Formik }                     from 'formik';
+import S                              from './styles';
+import Success                        from './Success';
+import Failed                         from './Failed';
+import Stopwatch                      from '../../lib/Stopwatch';
 
 const Room = ({ data }) => {
 

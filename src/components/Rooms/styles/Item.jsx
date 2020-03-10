@@ -4,6 +4,7 @@ const Item = styled.div`
 
   display: flex;
   width:   100%;
+  max-width: 300px;
   align-items: center;
   justify-content: center;
 
