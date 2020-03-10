@@ -5,7 +5,7 @@
 		"failView": {
 			"buttons": [
 				{
-					"image": "https://github.com/redant23/23-52storage/blob/master/icons/kakao.png",
+					"image": "https://github.com/redant23/23-52storage/blob/master/icons/kakao.png?raw=true",
 					"name": "failed",
 					"url": "http://pf.kakao.com/_Frkxjxb/chat"
 				}
@@ -19,64 +19,64 @@
 		"state": "activated",
 		"steps": [
 			{
-				"image": "https://github.com/redant23/23-52storage/blob/master/images/1.jpg",
+				"image": "https://github.com/redant23/23-52storage/blob/master/images/1.jpg?raw=true",
 				"input": [],
-				"question": "https://github.com/redant23/23-52storage/blob/master/images/step00.gif",
+				"question": "https://github.com/redant23/23-52storage/blob/master/images/step00.gif?raw=true",
 				"text": "눈을 뜨니 낯선 공간에 있는 나를 발견했다. 물소리가 들리고.. 비상 싸이렌 소리가...응?"
 			},
 			{
 				"answer": "180",
-				"image": "https://github.com/redant23/23-52storage/blob/master/images/2.jpg",
+				"image": "https://github.com/redant23/23-52storage/blob/master/images/2.jpg?raw=true",
 				"input": [
 					{
 						"type": "text"
 					}
 				],
-				"question": "https://github.com/redant23/23-52storage/blob/master/images/question1.png",
+				"question": "https://github.com/redant23/23-52storage/blob/master/images/question1.png?raw=true",
 				"text": "시간이 얼마나 흐른걸까..? 산소부족 경고다. 예비 산소를 충전해야한다. 패스워드는? 물음표에 들어가는 것이 패스워드겠군!"
 			},
 			{
 				"answer": "9110426",
-				"image": "https://github.com/redant23/23-52storage/blob/master/images/3.jpg",
+				"image": "https://github.com/redant23/23-52storage/blob/master/images/3.jpg?raw=true",
 				"input": [
 					{
 						"type": "text"
 					}
 				],
-				"question": "https://github.com/redant23/23-52storage/blob/master/images/question2.png",
+				"question": "https://github.com/redant23/23-52storage/blob/master/images/question2.png?raw=true",
 				"text": "여긴 도대체 어디지? 잠금을 풀어 구조요청을 하자! 저 글안에 힌트가 있을거 같은데..여섯자리 같은데? 아니 일곱자리군! 패스워드는 숫자 밖에 입력이 되질않는군.. "
 			},
 			{
 				"answer": "1019",
-				"image": "https://github.com/redant23/23-52storage/blob/master/images/4.jpg",
+				"image": "https://github.com/redant23/23-52storage/blob/master/images/4.jpg?raw=true",
 				"input": [
 					{
 						"type": "text"
 					}
 				],
-				"question": "https://github.com/redant23/23-52storage/blob/master/images/question3.png",
+				"question": "https://github.com/redant23/23-52storage/blob/master/images/question3.png?raw=true",
 				"text": "불이 들어온다! 작동한다! 몇 번으로 걸어야 하지? "
 			},
 			{
 				"answer": "1972",
-				"image": "https://github.com/redant23/23-52storage/blob/master/images/5.jpg",
+				"image": "https://github.com/redant23/23-52storage/blob/master/images/5.jpg?raw=true",
 				"input": [
 					{
 						"type": "text"
 					}
 				],
-				"question": "https://github.com/redant23/23-52storage/blob/master/images/question4.png",
+				"question": "https://github.com/redant23/23-52storage/blob/master/images/question4.png?raw=true",
 				"text": "Drrrrr…... \"Press your extention number.\" 엥? 내선번호? 뭐이리 입력하라는게 많아..! 이것들 사이에 무슨 관계가 있는 거지? "
 			},
 			{
 				"answer": "OKY3",
-				"image": "https://github.com/redant23/23-52storage/blob/master/images/6.jpg",
+				"image": "https://github.com/redant23/23-52storage/blob/master/images/6.jpg?raw=true",
 				"input": [
 					{
 						"type": "text"
 					}
 				],
-				"question": "https://github.com/redant23/23-52storage/blob/master/images/question5.png",
+				"question": "https://github.com/redant23/23-52storage/blob/master/images/question5.png?raw=true",
 				"text": "연결됐다! \"Please let me know your current X-Y point number.…please\" 엥!?현재 좌표를 알려달라고???? (따옴표는 생략하고 입력하자!)"
 			},
 			{
@@ -92,7 +92,7 @@
 		"successView": {
 			"buttons": [
 				{
-					"image": "https://github.com/redant23/23-52storage/blob/master/icons/kakao.png",
+					"image": "https://github.com/redant23/23-52storage/blob/master/icons/kakao.png?raw=true",
 					"name": "success",
 					"url": "http://pf.kakao.com/_Frkxjxb/chat"
 				}
@@ -100,7 +100,7 @@
 			"text": "친구 추가하고 새로운 미션을 받을까?",
 			"title": "대단하군"
 		},
-		"thumbnail": "https://github.com/redant23/23-52storage/blob/master/images/thum.jpg"
+		"thumbnail": "https://github.com/redant23/23-52storage/blob/master/images/thum.jpg?raw=true"
 	},
 	{
 		"_id": "room02",
@@ -110,6 +110,6 @@
 		"name": "탈출2",
 		"state": "deactivated",
 		"steps": [],
-		"thumbnail": "https://github.com/redant23/23-52storage/blob/master/images/thum2.jpg"
+		"thumbnail": "https://github.com/redant23/23-52storage/blob/master/images/thum2.jpg?raw=true"
 	}
 ]
