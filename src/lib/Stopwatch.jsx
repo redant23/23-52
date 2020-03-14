@@ -28,7 +28,7 @@ function CountdownTimer({ time, currentTime }) {
 
   const startCount = () => setTimeout(() => {
     setNewTime(newTime - 1);
-    currentTime(formattedTime(newTime));
+    currentTime(formattedTime(newTime), newTime);
   }, 1000);
 
   useEffect(() => {

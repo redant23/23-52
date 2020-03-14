@@ -9,10 +9,10 @@
 					"name": "failed",
 					"url": "http://pf.kakao.com/_Frkxjxb/chat"
 				}
-			]
+			],
+			"text": "친구 추가하고 새로운 미션을 받을까?",
+			"title": "탈출 실패"
 		},
-		"text": "친구 추가하고 새로운 미션을 받을까?",
-		"title": "탈출 실패",
 		"joined": 0,
 		"limit": 30,
 		"name": "탈출",
@@ -78,15 +78,6 @@
 				],
 				"question": "https://github.com/redant23/23-52storage/blob/master/images/question5.png?raw=true",
 				"text": "연결됐다! \"Please let me know your current X-Y point number.…please\" 엥!?현재 좌표를 알려달라고???? (따옴표는 생략하고 입력하자!)"
-			},
-			{
-				"image": null,
-				"input": [
-					{
-						"type": "text"
-					}
-				],
-				"text": "연결됐다! @#!@$%^^&#$##…please 엥!?현재 좌표를 알려달라고 여기에 힌트가 있나?"
 			}
 		],
 		"successView": {

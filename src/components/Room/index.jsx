@@ -12,14 +12,18 @@ const Room = ({ data }) => {
   const [onFailed, setOnFailed]       = useState(false);
   const [leftTime, setLeftTime]       = useState(null);
 
+  const log = JSON.parse(localStorage.getItem(data._id));
   const steps = data.steps;
   const step = steps[currentStep];
 
   const next = () => {
-    const questionTotal = steps.filter(step => step.input.length).length - 1;
+    const questionTotal = steps.filter(step => step.answer).length;
 
     if (questionTotal === currentStep) {
       setOnSuccess(true);
+      setTimeout(() => {
+        localStorage.removeItem(data._id);
+      }, 2000);
     } else {
       setCurrentStep(currentStep + 1);
     }
@@ -40,13 +44,39 @@ const Room = ({ data }) => {
     }
   }
 
+  const writeLog = () => {
+    if (leftTime) {
+      localStorage.setItem(data._id, JSON.stringify({
+        leftTime: {
+          raw: leftTime.raw
+        },
+        stage: {
+          current: currentStep
+        },
+      }));
+    }
+  };
+
   useEffect(() => {
 
     if (leftTime && !leftTime.minutes && !leftTime.seconds) {
       timeOver();
+      setTimeout(() => {
+        localStorage.removeItem(data._id);
+      }, 2000);
     }
 
+    writeLog();
+
   }, [leftTime]);
+
+  useEffect(() => {
+
+    if (log) {
+      setCurrentStep(log.stage.current);
+    }
+
+  }, []);
 
   if (!data) return null;
 
@@ -69,8 +99,8 @@ const Room = ({ data }) => {
         {
           (!onSuccess && !onFailed) &&
           <Stopwatch
-            currentTime = {(time) => setLeftTime(time)}
-            time        = {data.limit * 60}
+            currentTime = {(time, rawTime) => setLeftTime({...time, raw: rawTime})}
+            time        = {log ? Number(log.leftTime.raw) : data.limit * 60}
           />
         }
       </S.Count>
